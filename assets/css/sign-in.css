@@ -1,0 +1,196 @@
+main {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  width: 70%;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main-section {
+  box-sizing: border-box;
+  padding: 50px 10px;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  align-items: center;
+}
+
+.main-section .main-heading-div p {
+  font-size: 35px;
+  color: #4DB6AC;
+  font-weight: 900;
+}
+
+.main-section .social-login-div a {
+  text-decoration: none;
+}
+
+.main-section .social-login-div .google-btn-container {
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.19), 0 2px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 5px;
+  height: 42px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: #FFFFFF;
+}
+
+.main-section .social-login-div .google-btn-container p {
+  margin: 0px;
+  margin-left: 10px;
+  color: gray;
+  text-decoration: none;
+}
+
+.main-section .social-login-div .google-btn-container #google-btn {
+  padding: 8px;
+  height: 25px;
+  width: 25px;
+}
+
+.main-section .social-login-div .google-btn-container:hover {
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.main-section .login-form-div {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-section .login-form-div .option-text {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.main-section .login-form-div .input-bar-container {
+  background-color: #E0F2F1;
+  margin: 5px;
+  padding: 4px 15px;
+  font-size: 20px;
+  width: 90%;
+  border-radius: 4px;
+}
+
+.main-section .login-form-div .input-bar {
+  padding: 5px 10px;
+  outline: none;
+  font-size: 18px;
+  height: 30px;
+  width: 80%;
+  border: 0px;
+  background-color: #E0F2F1;
+}
+
+.main-section .login-form-div .forgot-password-div {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.main-section .login-form-div .forgot-password-div a {
+  text-decoration: none;
+  cursor: pointer;
+  color: gray;
+  border-bottom: 1px solid gray;
+}
+
+.main-section .login-form-div .forgot-password-div a:hover {
+  border-bottom: 1px solid black;
+}
+
+.main-section .login-form-div .btn {
+  cursor: pointer;
+  background-color: #4DB6AC;
+  color: white;
+  border-radius: 20px;
+  font-size: 15px;
+  padding: 10px 30px;
+  outline: none;
+}
+
+.main-section .login-form-div .btn:hover {
+  background-color: #00897B;
+}
+
+.aside-section {
+  padding: 50px 10px;
+  box-sizing: border-box;
+  width: 40%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #4DB6AC;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.aside-section .details {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.aside-section .details h2 {
+  font-size: 35px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.aside-section .details p {
+  text-align: center;
+}
+
+.aside-section .btn-2 {
+  cursor: pointer;
+  background-color: #4DB6AC;
+  color: white;
+  border-radius: 20px;
+  font-size: 15px;
+  padding: 10px 30px;
+  outline: none;
+  border: 2px solid white;
+  margin-bottom: 20px;
+}
+
+.aside-section .btn-2:hover {
+  background-color: #00897B;
+}
+
+.lgray-color {
+  color: gray;
+}
+
+@media screen and (max-width: 1000px) {
+  main {
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  .main-section {
+    width: 100%;
+  }
+  .aside-section {
+    width: 100%;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .main-section, .aside-section {
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    width: 100%;
+  }
+}

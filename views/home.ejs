@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="/css/home.css">
+<main>
+    <section class="main-section">
+        <div class="main-heading-div">
+            <p>Welcome to this amazing world of possibilities!</p>
+        </div>
+        <%if(locals.user){ %>  
+            <div class="user-details">
+                <%if(user.avatar&&user.avatar.length>0){ %>  
+                    <img src="<%=user.avatar%>" alt="Pic">
+                <%}else{%>
+                    <img src="/images/avatar.png" alt="Pic">
+                <%}%>
+                <p>User : <%=user.name%></p>
+                <p>Email : <%=user.email%></p>
+                <%if(user.auth=="local"){ %>
+                    <p>Head over to your <a href="/users/profile">profile</a> to edit!</p>
+                <%}else{%>
+                    <p><a href="/users/profile">Profile</a></p>
+                <%}%>
+            </div> 
+        <%}%>  
+
+    </section>
+</main>

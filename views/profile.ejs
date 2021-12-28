@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="/css/profile.css">
+<main>
+    <section class="main-section">
+        <div class="main-heading-div">
+        </div>
+        <%if(locals.user){ %> 
+            <%if(user.avatar&&user.avatar.length>0){ %>  
+                <img src="<%=user.avatar%>" alt="Pic">
+            <%}else{%>
+                <img src="/images/avatar.png" alt="Pic">
+            <%}%>
+            <p>Display Name : <%=user.name%></p>
+            <p>Email : <%=user.email%></p>
+            <%if(user.auth=="local"){ %> 
+                <div class="user-details">
+                    <form action="/users/update?id=<%=user.id%>" method="POST">
+                        <h2>Update Basic Details : </h2>
+                        <p>Display Name :</p> <input type="text" name="name" class="input-bar" placeholder="Name" value="<%=user.name%>" required> 
+                        <p>Enter Password : </p> <input type="password" name="password" class="input-bar" placeholder="Password"  required >  
+                        <button class="btn">Update</button>
+                    </form>
+
+                    <form action="/users/reset-password?id=<%=user.id%>" method="POST">
+                        <h2>Reset Password : </h2>
+                        <input type="password" name="old-password" class="input-bar" placeholder="Old Password" required>
+                        <input type="password" name="new-password" class="input-bar" placeholder="New Password" required>
+                        <input type="password" name="confirm-password" class="input-bar" placeholder="Confirm Password" required>
+                        <button class="btn">Reset</button>
+                    </form>
+                </div>
+            <%}else{%>  
+                <div class="main-heading-div">
+                    <p>Signed up With Google can't edit Profile!</p>
+                </div>
+            <%}%>  
+        <%}%>  
+
+    </section>
+</main>

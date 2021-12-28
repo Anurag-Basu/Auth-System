@@ -1,0 +1,59 @@
+<link rel="stylesheet" href="/css/sign-up.css">
+<main>
+    <section class="main-section">
+        <div class="main-heading-div">
+            <p>Sign up to Authy</p>
+        </div>
+
+        <div class="social-login-div">
+            <a href="/users/auth/google">
+                <div class="google-btn-container">
+                    <img id="google-btn" src="/images/g-logo.png" alt="">
+                    <p> Sign up with Google </p>
+                </div>
+            </a>
+        </div>
+
+        <form action="/users/create" method="POST">
+            <div class="login-form-div">
+                <label class="option-text lgray-color"> or use your email account to register :</label>
+                <div  class="lgray-color input-bar-container">
+                    <i class="fas fa-user-alt"></i>
+                    <input type="text" name="name" class="input-bar" placeholder="Name" required>
+                </div>
+                <div  class="lgray-color input-bar-container">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" name="email" class="input-bar" placeholder="Email" required>
+                </div>
+                <div class="lgray-color input-bar-container">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="password" class="input-bar" placeholder="Password" required>
+                </div>
+                <div class="lgray-color input-bar-container">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="confirm-password" class="input-bar" placeholder="Confirm Password" required>
+                </div>
+
+                <div class="buttons-container">
+                <button class="btn">SIGN UP</button>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <section class="aside-section">
+        <div class="details">
+            <h2>Already A Member?</h2>
+            <p>To keep connected please <br> login with your details!</p>
+        </div>
+        <div>
+            <a href="/sign-in"><button class="btn-2">SIGN IN</button></a>
+        </div>
+    </section>
+
+</main>
+
+<script src="https://kit.fontawesome.com/c2e4f2d141.js" crossorigin="anonymous"></script>
+
+
+

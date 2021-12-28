@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="/css/header.css">
+<nav>
+    <%if(locals.user){ %>  
+        <a href="/"> Home</a>
+        <div class="logged-in-btns" >
+            <a href="/users/profile"><%=user.name%></a>
+            <a href="/users/sign-out">Log-Out</a>
+        </div>   
+    <%}else{%>
+        <!-- <div class="logged-in-btns" > -->
+            <!-- <a href="/sign-up"> Sign Up</a> -->
+            <!-- <a href="/sign-in">Sign In</a> -->
+        <!-- </div>    -->
+    <%}%>
+</nav>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authy</title>
+    <%- style %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css">
+    <link rel="stylesheet" href="/css/layout.css">
+</head>
+<body>
+    <%- include("_header.ejs"); %>
+    <%- body %>
+    <%- script %>
+
+    <script>
+        var sm;
+        var em;
+        <% if(locals.flash.success && flash.success.length>0) {  %>
+            var sm = "<%=flash.success%>";
+        <%}%>
+        <% if(locals.flash.error && flash.error.length>0) {  %>
+            var em = "<%=flash.error%>";
+        <%}%>
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
+    <script src="/js/layout.js"></script>
+    
+</body>
+</html>

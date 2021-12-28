@@ -1,0 +1,27 @@
+nav {
+  z-index: 2;
+  display: flex;
+  /* justify-content: center; */
+  opacity: 0.8;
+  align-items: center;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 5px;
+  height: 30px;
+  position: fixed;
+  background-color: #00897B;
+  color: white;
+}
+
+nav a {
+  margin-left: 15px;
+  font-size: 30px;
+  text-decoration: none;
+  color: white;
+}
+
+.logged-in-btns {
+  margin-left: auto;
+  margin-right: 10px;
+}

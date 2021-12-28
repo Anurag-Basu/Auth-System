@@ -1,0 +1,54 @@
+<link rel="stylesheet" href="/css/sign-in.css">
+<main>
+    <section class="main-section">
+        <div class="main-heading-div">
+            <p>Sign in to Authy</p>
+        </div>
+
+        <div class="social-login-div">
+            <a href="/users/auth/google">
+                <div class="google-btn-container">
+                    <img id="google-btn" src="/images/g-logo.png" alt="">
+                    <p> Sign in with Google </p>
+                </div>
+            </a>
+        </div>
+        </div>
+        <form action="/users/create-session" method="POST">
+            <div class="login-form-div">
+                <label class="option-text lgray-color"> or use your email account :</label>
+                <div  class="lgray-color input-bar-container">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" name="email" class="input-bar" placeholder="Email" required >
+                </div>
+                <div class="lgray-color input-bar-container">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" name="password" class="input-bar" placeholder="Password" required>
+                </div>
+
+                <div class="forgot-password-div">
+                    <a href="/users/forgot-password">Forgot your password?</a>
+                </div>
+
+                <div class="buttons-container">
+                    <button class="btn">SIGN IN</button>
+                </div>
+            </div>
+         </form>
+    </section>
+
+    <section class="aside-section">
+        <div class="details">
+            <h2>Hello, Friend!</h2>
+            <p>Enter your details <br> and start your journey with us</p>
+        </div>
+        <div>
+           <a href="/sign-up"><button class="btn-2">SIGN UP</button></a>
+        </div>
+    </section>
+
+</main>
+
+<script src="https://kit.fontawesome.com/c2e4f2d141.js" crossorigin="anonymous"></script>
+
+

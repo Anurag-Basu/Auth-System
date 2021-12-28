@@ -1,0 +1,9 @@
+body {
+  background-image: url("/images/bg.jpg");
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+}
