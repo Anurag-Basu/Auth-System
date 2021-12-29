@@ -2,7 +2,7 @@
 const mongoose = require("mongoose");
 
 // connect with DB
-mongoose.connect("mongodb://localhost/auth-system", {
+mongoose.connect(process.env.DB_URL, {
   useUnifiedTopology: true,
 });
 

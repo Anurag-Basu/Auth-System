@@ -14,7 +14,8 @@ dotenv.config();
 passport.use(new googleStrategy({
     clientID: process.env.CLIENT_ID,
     clientSecret: process.env.CLIENT_SECRET,
-    callbackURL: "http://localhost:8000/users/auth/google/callback",
+    callbackURL: process.env.CALLBACK_URL,
+
 },
     function (accessToken, refreshToken, profile, done) {
         // find a user
